@@ -8,11 +8,44 @@ Ayaan Rege
 
 <style>
 body{
-
-background: linear-gradient(45deg, blue,  purple);
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+background: linear-gradient(45deg, blue,   purple);
 font-family: Helvetica;
+background-size: 300%;
 color: whitesmoke;
+
+animation: bgmove 5s infinite;
 }
+
+
+
+
+
+@keyframes  bgmove{
+
+
+0%{
+
+	background-position: 0% 50%;
+}
+50%{
+
+
+	background-position: 100% 50%;
+}
+
+
+100%{
+background-position: 0% 50%;
+}
+
+}
+
 
 </style>
 
@@ -29,10 +62,10 @@ color: whitesmoke;
 
 
 	</h1>
-	<hr width="60%" size="1rem" style="background-color: white; border-radius: 30px; border: 10px solid white;">
+
 
 <br>
-<br>
+
 	<h3>
 		
 		A clear and concise weather app that provides all your Azerbaijan Meteorological information at a single glance.
